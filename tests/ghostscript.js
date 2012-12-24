@@ -57,6 +57,18 @@ describe('ghostscript', function() {
     });
   });
 
+  describe('#jpegq', function() {
+    it('should set jpeg quality option with default', function(done) {
+      assert.deepEqual(gs().jpegq().options, ['-dJPEGQ=75']);
+      done();
+    });
+
+    it('should set jpeg quality option with value', function(done) {
+      assert.deepEqual(gs().jpegq(85).options, ['-dJPEGQ=85']);
+      done();
+    });
+  });
+
   describe('#nopause', function() {
     it('should set nopause option', function(done) {
       assert.deepEqual(gs().nopause().options, ['-dNOPAUSE']);

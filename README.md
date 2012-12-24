@@ -18,6 +18,7 @@ Wrapper for ghostscript in node.js.
       .input('./test.pdf')
       .output('./test-%d.jpg')
       .r(144)
+      .jpegq(90)
       .exec(function(err, stdout, stderr) {
         if (!err) {
           console.log(stdout);
@@ -32,6 +33,7 @@ Wrapper for ghostscript in node.js.
 * `device`
 * `exec`
 * `input`
+* `jpegq`
 * `nopause`
 * `output`
 * `r`

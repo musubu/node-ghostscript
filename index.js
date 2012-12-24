@@ -36,6 +36,12 @@ gs.prototype.input = function(file) {
   return this;
 };
 
+gs.prototype.jpegq = function(value) {
+  value = value || 75;
+  this.options.push('-dJPEGQ=' + value);
+  return this;
+};
+
 gs.prototype.nopause = function() {
   this.options.push('-dNOPAUSE');
   return this;
