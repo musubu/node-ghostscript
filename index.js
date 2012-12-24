@@ -55,4 +55,11 @@ gs.prototype.quiet = function() {
   return this;
 };
 
+gs.prototype.resolution = function(xres, yres) {
+  this.options.push('-r' + xres + (yres ? 'x' + yres : ''));
+  return this;
+};
+
+gs.prototype.r = gs.prototype.res = gs.prototype.resolution;
+
 module.exports = create;

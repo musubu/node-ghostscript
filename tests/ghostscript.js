@@ -82,5 +82,17 @@ describe('ghostscript', function() {
       done();
     });
   });
+
+  describe('#resolution', function() {
+    it('should set device resolution', function(done) {
+      assert.deepEqual(gs().res(144, 144).options, ['-r144x144']);
+      done();
+    });
+
+    it('should set device resolution', function(done) {
+      assert.deepEqual(gs().res(144).options, ['-r144']);
+      done();
+    });
+  });
 });
 
