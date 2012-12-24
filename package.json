@@ -1,0 +1,41 @@
+{
+  "name": "ghostscript",
+  "version": "0.1.0",
+  "description": "Ghostscript wrapper",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/musubu/node-ghostscript.git"
+  },
+  "keywords": [
+    "ghostscript",
+    "pdf",
+    "image",
+    "converter"
+  ],
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "mocha": ">=1.7"
+  },
+  "author": {
+    "name": "Musubu Inc.",
+    "email": "dev@musubu.co.jp"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "engine": {
+    "node": ">=0.8.16"
+  }
+}
